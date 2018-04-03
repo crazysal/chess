@@ -1,0 +1,251 @@
+
+//IR  Session run on Fri Mar 17 11:24:23 2017 (1489764263)
+
+
+------------------------------------------------------------------------
+GSL Nelder-Mead (newer version) with active tests and weights:
+Fit of scaled error: 1
+Fit of engine first line: 1
+Fit of equal-top-value moves: 1
+Fit of engine second line: 1
+bounds s in [0.0001..1.024], c in [0..10],  d in [16.5..16.5], v in [0.05..0.05], a in [0..10], hm in [0..100], hp in [1..1], b in [1..1], of
+PowerShares trial BasicPS: 9027 turns, 447 filtered by 3 filters; delta cap 10.00
+Spec Grischuktry3f: InvExp, Unit weights with
+s = 0.0411497, c = 0.509852, d = 16.5, v = 0.05, a = 0.0510628, hm = 10, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Grischuk2m: PlayerFilter Grischuk, to move
+------------------------------------------------------------------------
+
+Total number of minimand calls: 788
+Best-fit score (x10,000) and spec: 0.239221
+Grischuktry4: InvExp, Unit weights with s = 0.0408233, c = 0.508823, d = 16.5, v = 0.05, a = 0.0290924, hm = 100, hp = 1, b = 1
+----------
+IPR: 2663 from 0.05803, 2-sigma range [2498,2828], 2.8-sigma [2340,2986]
+IPR if 447 positions faced were test suite: 2654, st. dev. 82
+AdjIPR: 2.7e+03 via 0.0569037/0.0586919 = 0.969533: 2.5e+03--2.9e+03; 2.8s: 2.5e+03--2.9e+03
+Adj. AE/turn: 0.0562621 stdev. 0.00547814, index 0.000259107
+
+Line for paper: 
+Grischuktry4 & & 2663 & 2498--2828 & 2498--2828 & & 447\\  % IPRauto: 2654 +- 82.41  / 2688
+Bootstrap IPR: 2663.3, stdev 0
+Bootstrap s: 0.040823, stdev 0
+Bootstrap c: 0.50882, stdev 0
+
+//IR  Session run on Fri Mar 17 11:36:12 2017 (1489764972)
+
+PowerShares trial BasicPS: 0 turns, 0 filtered by 2 filters; delta cap 10.00
+Spec SLMstart: InvExp, Unit weights with
+s = 0.02, c = 0.53, d = 16.5, v = 0.05, a = 1, hm = 1.61, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+
+PowerShares trial BasicPS: 39934 turns, 520 filtered by 3 filters; delta cap 10.00
+Spec SLMstart: InvExp, Unit weights with
+s = 0.02, c = 0.53, d = 16.5, v = 0.05, a = 1, hm = 1.61, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Grischuk2m: PlayerFilter Grischuk, to move
+
+
+------------------------------------------------------------------------
+GSL Nelder-Mead (newer version) with active tests and weights:
+Fit of scaled error: 1
+Fit of engine first line: 1
+Fit of equal-top-value moves: 1
+Fit of engine second line: 1
+Index fit of [2,4], unitsked: 0.05
+bounds s in [0.0001..1.024], c in [0..10],  d in [16.5..16.5], v in [0.05..0.05], a in [0..10], hm in [0..10], hp in [1..1], b in [1..1], of
+PowerShares trial BasicPS: 39934 turns, 520 filtered by 3 filters; delta cap 10.00
+Spec SLMstart: InvExp, Unit weights with
+s = 0.02, c = 0.53, d = 16.5, v = 0.05, a = 1, hm = 1.61, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Grischuk2m: PlayerFilter Grischuk, to move
+------------------------------------------------------------------------
+
+Total number of minimand calls: 1173
+Best-fit score (x10,000) and spec: 0.238666
+Grischuk2014-2016: InvExp, Unit weights with s = 0.0380396, c = 0.538282, d = 16.5, v = 0.05, a = 0.0995439, hm = 10, hp = 1, b = 1
+----------
+IPR: 2794 from 0.04868, 2-sigma range [2666,2922], 2.8-sigma [2543,3045]
+IPR if 520 positions faced were test suite: 2798, st. dev. 64
+AdjIPR: 2.8e+03 via 0.0472395/0.0484207 = 0.975605: 2.7e+03--2.9e+03; 2.8s: 2.7e+03--2.9e+03
+Adj. AE/turn: 0.0474971 stdev. 0.00499953, index 0.000219244
+
+Line for paper: 
+Grischuk2014-2016 & & 2794 & 2666--2922 & 2666--2922 & & 520\\  % IPRauto: 2798 +- 63.93  / 2811
+Bootstrap IPR: 2794, stdev 0
+Bootstrap s: 0.03804, stdev 0
+Bootstrap c: 0.53828, stdev 0
+PowerShares trial BasicPS: 39934 turns, 218 filtered by 3 filters; delta cap 10.00
+Spec Grischuk2014-2016: InvExp, Unit weights with
+s = 0.0380396, c = 0.538282, d = 16.5, v = 0.05, a = 0.0995439, hm = 10, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Leko2m: PlayerFilter Leko, to move
+
+PowerShares trial BasicPS: 39934 turns, 218 filtered by 3 filters; delta cap 10.00
+Spec Grischuk2014-2016: InvExp, Unit weights with
+s = 0.0380396, c = 0.538282, d = 16.5, v = 0.05, a = 0.0995439, hm = 10, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Leko2m: PlayerFilter Leko, to move
+
+
+------------------------------------------------------------------------
+GSL Nelder-Mead (newer version) with active tests and weights:
+Fit of scaled error: 1
+Fit of engine first line: 1
+Fit of equal-top-value moves: 1
+Fit of engine second line: 1
+Index fit of [2,4], unknown sked: 0.05
+bounds s in [0.0001..1.024], c in [0..10],  d in [16.5..16.5], v in [0.05..0.05], a in [0..10], hm in [0..10], hp in [1..1], b in [1..1], of
+PowerShares trial BasicPS: 39934 turns, 218 filtered by 3 filters; delta cap 10.00
+Spec Grischuk2014-2016: InvExp, Unit weights with
+s = 0.0380396, c = 0.538282, d = 16.5, v = 0.05, a = 0.0995439, hm = 10, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Leko2m: PlayerFilter Leko, to move
+------------------------------------------------------------------------
+
+Total number of minimand calls: 188
+Best-fit score (x10,000) and spec: 0.28017
+Leko2014-2016: InvExp, Unit weights with s = 0.0308525, c = 0.554447, d = 16.5, v = 0.05, a = 0.16715, hm = 9.99958, hp = 1, b = 1
+----------
+IPR: 2929 from 0.03901, 2-sigma range [2802,3056], 2.8-sigma [2681,3178]
+IPR if 218 positions faced were test suite: 2983, st. dev. 63
+AdjIPR: 2.9e+03 via 0.0343436/0.0351703 = 0.976493: 2.8e+03--3.1e+03; 2.8s: 2.8e+03--3.1e+03
+Adj. AE/turn: 0.0380942 stdev. 0.00385894, index 0.00026136
+
+Line for paper: 
+Leko2014-2016 & & 2929 & 2802--3056 & 2802--3056 & & 218\\  % IPRauto: 2983 +- 63.41  / 2942
+Bootstrap IPR: 2929.3, stdev 0
+Bootstrap s: 0.030852, stdev 0
+Bootstrap c: 0.55445, stdev 0
+
+------------------------------------------------------------------------
+GSL Nelder-Mead (newer version) with active tests and weights:
+Fit of scaled error: 1
+Fit of engine first line: 1
+Fit of equal-top-value moves: 1
+Fit of engine second line: 1
+Index fit of [2,4], sqrtsked: 0.05
+bounds s in [0.0001..1.024], c in [0..10],  d in [16.5..16.5], v in [0.05..0.05], a in [0..10], hm in [0..10], hp in [1..1], b in [1..1], of
+PowerShares trial BasicPS: 39934 turns, 218 filtered by 3 filters; delta cap 10.00
+Spec Leko2014-2016: InvExp, Unit weights with
+s = 0.0308525, c = 0.554447, d = 16.5, v = 0.05, a = 1, hm = 1, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Leko2m: PlayerFilter Leko, to move
+------------------------------------------------------------------------
+
+Total number of minimand calls: 313
+Best-fit score (x10,000) and spec: 0.29459
+Lekotry2: InvExp, Unit weights with s = 0.0397751, c = 0.56988, d = 16.5, v = 0.05, a = 3.05101e-10, hm = 2.06138, hp = 1, b = 1
+----------
+IPR: 2924 from 0.03937, 2-sigma range [2794,3054], 2.8-sigma [2670,3178]
+IPR if 218 positions faced were test suite: 2984, st. dev. 65
+AdjIPR: 2.9e+03 via 0.0343436/0.0351273 = 0.977689: 2.8e+03--3.1e+03; 2.8s: 2.8e+03--3.1e+03
+Adj. AE/turn: 0.0384963 stdev. 0.00385894, index 0.00026136
+
+Line for paper: 
+Lekotry2 & & 2924 & 2794--3054 & 2794--3054 & & 218\\  % IPRauto: 2984 +- 64.87  / 2936
+Bootstrap IPR: 2924.2, stdev 0
+Bootstrap s: 0.039775, stdev 0
+Bootstrap c: 0.56988, stdev 0
+
+------------------------------------------------------------------------
+GSL Nelder-Mead (newer version) with active tests and weights:
+Fit of scaled error: 1
+Fit of engine first line: 1
+Fit of equal-top-value moves: 1
+Fit of engine second line: 1
+Index fit of [2,4], unitsked: 0.05
+bounds s in [0.0001..1.024], c in [0..10],  d in [16.5..16.5], v in [0.05..0.05], a in [0..10], hm in [0..10], hp in [1..1], b in [1..1], of
+PowerShares trial BasicPS: 39934 turns, 218 filtered by 3 filters; delta cap 10.00
+Spec Lekotry2: InvExp, Unit weights with
+s = 0.2, c = 0.3, d = 16.5, v = 0.05, a = 1, hm = 1, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Leko2m: PlayerFilter Leko, to move
+------------------------------------------------------------------------
+
+Total number of minimand calls: 1716
+Best-fit score (x10,000) and spec: 0.92276
+Lekotry3: InvExp, Unit weights with s = 0.0751588, c = 3.77625, d = 16.5, v = 0.05, a = 3.26604, hm = 0.218027, hp = 1, b = 1
+----------
+IPR: 2997 from 0.03417, 2-sigma range [2957,3037], 2.8-sigma [2918,3076]
+IPR if 218 positions faced were test suite: 2995, st. dev. 20
+AdjIPR: 3e+03 via 0.0343436/0.0343413 = 1.00006: 3e+03--3e+03; 2.8s: 3e+03--3e+03
+Adj. AE/turn: 0.0341714 stdev. 0.00385894, index 0.00026136
+
+Line for paper: 
+Lekotry3 & & 2997 & 2957--3037 & 2957--3037 & & 218\\  % IPRauto: 2995 +- 20.1  / 2997
+Bootstrap IPR: 2997, stdev 0
+Bootstrap s: 0.075159, stdev 0
+Bootstrap c: 3.7763, stdev 0
+
+------------------------------------------------------------------------
+GSL Simulated Annealing with active tests and weights:
+Fit of scaled error: 1
+Fit of engine first line: 1
+Fit of equal-top-value moves: 1
+Fit of engine second line: 1
+Index fit of [2,4], unknown sked: 0.05
+bounds s in [0.0001..1.024], c in [0..10],  d in [16.5..16.5], v in [0.05..0.05], a in [0..10], hm in [0..10], hp in [1..1], b in [1..1], of
+PowerShares trial BasicPS: 39934 turns, 218 filtered by 3 filters; delta cap 10.00
+Spec Lekotry3: InvExp, Unit weights with
+s = 0.0751588, c = 3.77625, d = 16.5, v = 0.05, a = 3.26604, hm = 0.218027, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Leko2m: PlayerFilter Leko, to move
+------------------------------------------------------------------------
+
+Doing 1000 evals by SA from temp 1 damped by 1.1574
+giving 63 cooling stages with 16 probes each.
+
+Total number of minimand calls: 1026
+Best-fit score (x10,000) and spec: 0.72296
+LekoSA: InvExp, Unit weights with s = 0.0739365, c = 7.93012, d = 16.5, v = 0.05, a = 3.33914, hm = 0.222762, hp = 1, b = 1
+----------
+IPR: 2950 from 0.03753, 2-sigma range [2916,2984], 2.8-sigma [2884,3016]
+IPR if 218 positions faced were test suite: 2997, st. dev. 17
+AdjIPR: 2.9e+03 via 0.0343436/0.0341515 = 1.00562: 2.9e+03--3e+03; 2.8s: 2.9e+03--3e+03
+Adj. AE/turn: 0.0377407 stdev. 0.00385894, index 0.00026136
+
+Line for paper: 
+LekoSA & & 2950 & 2916--2984 & 2916--2984 & & 218\\  % IPRauto: 2997 +- 16.83  / 2947
+Bootstrap IPR: 2950, stdev 0
+Bootstrap s: 0.073937, stdev 0
+Bootstrap c: 7.9301, stdev 0

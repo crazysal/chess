@@ -1,0 +1,15 @@
+
+//IR  Session run on Wed Apr 19 15:19:43 2017 (1492629583)
+
+Minimand value: 50.3824 at E0000: (InvExp:1), Unit weights with
+s = 0.0500, c = 0.6000, d = 12.5000, v = 0.0500, a = 1.0000, hm = 1.0000, hp = 1.0000, b = 1.0000
+Minimand value: 37.6955 at E0000: (InvExp:1), Unit weights with
+s = 0.0500, c = 0.6100, d = 12.5000, v = 0.0500, a = 1.0000, hm = 1.0000, hp = 1.0000, b = 1.0000
+Minimand value: 27.0572 at E0000: (InvExp:1), Unit weights with
+s = 0.0500, c = 0.6200, d = 12.5000, v = 0.0500, a = 1.0000, hm = 1.0000, hp = 1.0000, b = 1.0000
+Minimand value: 18.352 at E0000: (InvExp:1), Unit weights with
+s = 0.0500, c = 0.6300, d = 12.5000, v = 0.0500, a = 1.0000, hm = 1.0000, hp = 1.0000, b = 1.0000
+Minimand value: 11.4732 at E0000: (InvExp:1), Unit weights with
+s = 0.0500, c = 0.6400, d = 12.5000, v = 0.0500, a = 1.0000, hm = 1.0000, hp = 1.0000, b = 1.0000
+Minimand value: 6.32216 at E0000: (InvExp:1), Unit weights with
+s = 0.0500, c = 0.6500, d = 12.5000, v = 0.0500, a = 1.0000, hm = 1.0000, hp = 1.0000, b = 1.0000

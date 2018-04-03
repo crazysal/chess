@@ -1,0 +1,2 @@
+g++ -O5 -o ir -I/util/gsl/include -I/util/cminpack/include -L/util/gsl/lib -L/util/cminpack/lib $1 -lgsl -lgslcblas -lcminpack -lm
+

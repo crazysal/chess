@@ -1,0 +1,130 @@
+g++ -O5      -I/util/gsl/include -c IRmain.cpp
+In file included from IRmain.cpp:94:0:
+Minimizer.h:1055:18: warning: inline function ‘double Minimizer::veeWalker1() const’ used but never defined
+    inline double veeWalker1() const;
+                  ^~~~~~~~~~
+Minimizer.h:1056:18: warning: inline function ‘double Minimizer::veeWalker2() const’ used but never defined
+    inline double veeWalker2() const;
+                  ^~~~~~~~~~
+Minimizer.h:1053:18: warning: inline function ‘double Minimizer::vWalkS(double) const’ used but never defined
+    inline double vWalkS(const double c) const;
+                  ^~~~~~
+Minimizer.h:1051:18: warning: inline function ‘double Minimizer::vWalkC(double) const’ used but never defined
+    inline double vWalkC(const double s) const;
+                  ^~~~~~
+g++ -O5      -I/util/gsl/include -c Demos.cpp
+In file included from Ensemble.h:84:0,
+                 from Demos.h:11,
+                 from Demos.cpp:7:
+Minimizer.h:1055:18: warning: inline function ‘double Minimizer::veeWalker1() const’ used but never defined
+    inline double veeWalker1() const;
+                  ^~~~~~~~~~
+Minimizer.h:1056:18: warning: inline function ‘double Minimizer::veeWalker2() const’ used but never defined
+    inline double veeWalker2() const;
+                  ^~~~~~~~~~
+Minimizer.h:1053:18: warning: inline function ‘double Minimizer::vWalkS(double) const’ used but never defined
+    inline double vWalkS(const double c) const;
+                  ^~~~~~
+Minimizer.h:1051:18: warning: inline function ‘double Minimizer::vWalkC(double) const’ used but never defined
+    inline double vWalkC(const double s) const;
+                  ^~~~~~
+g++ -O5      -I/util/gsl/include -c Ensemble.cpp
+In file included from Ensemble.h:84:0,
+                 from Ensemble.cpp:8:
+Minimizer.h:1055:18: warning: inline function ‘double Minimizer::veeWalker1() const’ used but never defined
+    inline double veeWalker1() const;
+                  ^~~~~~~~~~
+Minimizer.h:1056:18: warning: inline function ‘double Minimizer::veeWalker2() const’ used but never defined
+    inline double veeWalker2() const;
+                  ^~~~~~~~~~
+Minimizer.h:1053:18: warning: inline function ‘double Minimizer::vWalkS(double) const’ used but never defined
+    inline double vWalkS(const double c) const;
+                  ^~~~~~
+Minimizer.h:1051:18: warning: inline function ‘double Minimizer::vWalkC(double) const’ used but never defined
+    inline double vWalkC(const double s) const;
+                  ^~~~~~
+g++ -O5      -I/util/gsl/include -c Minimizer.cpp
+g++ -O5      -I/util/gsl/include -c Trial.cpp
+g++ -O5      -I/util/gsl/include -c PerfData.cpp
+g++ -O5      -I/util/gsl/include -o IRx IRmain.o Demos.o Ensemble.o Minimizer.o Trial.o PerfData.o -L/util/gsl/lib  -lgsl -lgslcblas -lm
+Demos.o: In function `IRutil::endPtLT(IRutil::Endpt const&, IRutil::Endpt const&)':
+Demos.cpp:(.text+0x460): multiple definition of `IRutil::endPtLT(IRutil::Endpt const&, IRutil::Endpt const&)'
+IRmain.o:IRmain.cpp:(.text+0x14d0): first defined here
+Demos.o: In function `playAIFfile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+Demos.cpp:(.text+0x6120): multiple definition of `playAIFfile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+IRmain.o:IRmain.cpp:(.text+0x4360): first defined here
+Demos.o:(.bss+0x60): multiple definition of `AggregateTest::header[abi:cxx11]'
+IRmain.o:(.bss+0x60): first defined here
+Demos.o:(.bss+0x40): multiple definition of `MoveIndexTest::header[abi:cxx11]'
+IRmain.o:(.bss+0x40): first defined here
+Demos.o:(.bss+0x20): multiple definition of `SelectionTest::header[abi:cxx11]'
+IRmain.o:(.bss+0x20): first defined here
+Demos.o:(.bss+0x0): multiple definition of `GoMenu::GO_NAME[abi:cxx11]'
+IRmain.o:(.bss+0x0): first defined here
+Demos.o:(.bss+0x80): multiple definition of `ss'
+IRmain.o:(.bss+0x80): first defined here
+Ensemble.o: In function `IRutil::endPtLT(IRutil::Endpt const&, IRutil::Endpt const&)':
+Ensemble.cpp:(.text+0x950): multiple definition of `IRutil::endPtLT(IRutil::Endpt const&, IRutil::Endpt const&)'
+IRmain.o:IRmain.cpp:(.text+0x14d0): first defined here
+Ensemble.o: In function `playAIFfile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+Ensemble.cpp:(.text+0x9ec0): multiple definition of `playAIFfile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+IRmain.o:IRmain.cpp:(.text+0x4360): first defined here
+Ensemble.o:(.bss+0x60): multiple definition of `AggregateTest::header[abi:cxx11]'
+IRmain.o:(.bss+0x60): first defined here
+Ensemble.o:(.bss+0x40): multiple definition of `MoveIndexTest::header[abi:cxx11]'
+IRmain.o:(.bss+0x40): first defined here
+Ensemble.o:(.bss+0x20): multiple definition of `SelectionTest::header[abi:cxx11]'
+IRmain.o:(.bss+0x20): first defined here
+Ensemble.o:(.bss+0x0): multiple definition of `GoMenu::GO_NAME[abi:cxx11]'
+IRmain.o:(.bss+0x0): first defined here
+Ensemble.o:(.bss+0x80): multiple definition of `ss'
+IRmain.o:(.bss+0x80): first defined here
+Minimizer.o: In function `IRutil::endPtLT(IRutil::Endpt const&, IRutil::Endpt const&)':
+Minimizer.cpp:(.text+0x170): multiple definition of `IRutil::endPtLT(IRutil::Endpt const&, IRutil::Endpt const&)'
+IRmain.o:IRmain.cpp:(.text+0x14d0): first defined here
+Minimizer.o: In function `playAIFfile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+Minimizer.cpp:(.text+0x180): multiple definition of `playAIFfile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+IRmain.o:IRmain.cpp:(.text+0x4360): first defined here
+Minimizer.o:(.bss+0x40): multiple definition of `AggregateTest::header[abi:cxx11]'
+IRmain.o:(.bss+0x60): first defined here
+Minimizer.o:(.bss+0x20): multiple definition of `MoveIndexTest::header[abi:cxx11]'
+IRmain.o:(.bss+0x40): first defined here
+Minimizer.o:(.bss+0x0): multiple definition of `SelectionTest::header[abi:cxx11]'
+IRmain.o:(.bss+0x20): first defined here
+Minimizer.o:(.bss+0x60): multiple definition of `ss'
+IRmain.o:(.bss+0x80): first defined here
+Trial.o: In function `IRutil::endPtLT(IRutil::Endpt const&, IRutil::Endpt const&)':
+Trial.cpp:(.text+0x0): multiple definition of `IRutil::endPtLT(IRutil::Endpt const&, IRutil::Endpt const&)'
+IRmain.o:IRmain.cpp:(.text+0x14d0): first defined here
+Trial.o: In function `playAIFfile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+Trial.cpp:(.text+0xa630): multiple definition of `playAIFfile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+IRmain.o:IRmain.cpp:(.text+0x4360): first defined here
+Trial.o:(.bss+0x40): multiple definition of `AggregateTest::header[abi:cxx11]'
+IRmain.o:(.bss+0x60): first defined here
+Trial.o:(.bss+0x20): multiple definition of `MoveIndexTest::header[abi:cxx11]'
+IRmain.o:(.bss+0x40): first defined here
+Trial.o:(.bss+0x0): multiple definition of `SelectionTest::header[abi:cxx11]'
+IRmain.o:(.bss+0x20): first defined here
+Trial.o:(.bss+0x60): multiple definition of `ss'
+IRmain.o:(.bss+0x80): first defined here
+PerfData.o: In function `IRutil::endPtLT(IRutil::Endpt const&, IRutil::Endpt const&)':
+PerfData.cpp:(.text+0xf0): multiple definition of `IRutil::endPtLT(IRutil::Endpt const&, IRutil::Endpt const&)'
+IRmain.o:IRmain.cpp:(.text+0x14d0): first defined here
+PerfData.o:(.bss+0x20): multiple definition of `MoveIndexTest::header[abi:cxx11]'
+IRmain.o:(.bss+0x40): first defined here
+PerfData.o:(.bss+0x40): multiple definition of `AggregateTest::header[abi:cxx11]'
+IRmain.o:(.bss+0x60): first defined here
+PerfData.o:(.bss+0x0): multiple definition of `SelectionTest::header[abi:cxx11]'
+IRmain.o:(.bss+0x20): first defined here
+PerfData.o: In function `playAIFfile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+PerfData.cpp:(.text+0x4570): multiple definition of `playAIFfile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+IRmain.o:IRmain.cpp:(.text+0x4360): first defined here
+PerfData.o:(.bss+0x60): multiple definition of `ss'
+IRmain.o:(.bss+0x80): first defined here
+Ensemble.o: In function `Minimizer::minimize1(double, double)':
+Ensemble.cpp:(.text._ZN9Minimizer9minimize1Edd[_ZN9Minimizer9minimize1Edd]+0x3d6): undefined reference to `Minimizer::veeWalker2() const'
+Ensemble.cpp:(.text._ZN9Minimizer9minimize1Edd[_ZN9Minimizer9minimize1Edd]+0xa67): undefined reference to `Minimizer::veeWalker1() const'
+Ensemble.cpp:(.text._ZN9Minimizer9minimize1Edd[_ZN9Minimizer9minimize1Edd]+0x12d6): undefined reference to `Minimizer::vWalkS(double) const'
+Ensemble.cpp:(.text._ZN9Minimizer9minimize1Edd[_ZN9Minimizer9minimize1Edd]+0x1399): undefined reference to `Minimizer::vWalkC(double) const'
+collect2: error: ld returned 1 exit status
+make: *** [IR] Error 1

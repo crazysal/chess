@@ -1,0 +1,457 @@
+
+//IR  Session run on Fri Mar 17 12:04:16 2017 (1489766656)
+
+
+//IR  Session run on Fri Mar 17 12:10:13 2017 (1489767013)
+
+
+------------------------------------------------------------------------
+GSL Nelder-Mead (newer version) with active tests and weights:
+Fit of scaled error: 1
+Fit of engine first line: 1
+Fit of equal-top-value moves: 1
+Fit of engine second line: 0.5
+Index fit of [2,4], unitsked: 0.05
+bounds s in [0.0001..1.024], c in [0..10],  d in [16.5..16.5], v in [0.05..0.05], a in [0..10], hm in [0..10], hp in [1..1], b in [1..1], of
+PowerShares trial BasicPS: 10819 turns, 9481 filtered by 2 filters; delta cap 10.00
+Spec SLMstart: InvExp, Unit weights with
+s = 0.02, c = 0.53, d = 16.5, v = 0.05, a = 1, hm = 1.61, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+------------------------------------------------------------------------
+
+Total number of minimand calls: 371
+Best-fit score (x10,000) and spec: 2.17174e-06
+AA2375SF7in2016: InvExp, Unit weights with s = 0.0175644, c = 0.600612, d = 16.5, v = 0.05, a = 1.00062, hm = 1.45056, hp = 1, b = 1
+----------
+IPR: 2341 from 0.08108, 2-sigma range [2305,2377], 2.8-sigma [2271,2411]
+IPR if 9481 positions faced were test suite: 2436, st. dev. 18
+AdjIPR: 2.3e+03 via 0.0742614/0.0742614 = 1: 2.3e+03--2.4e+03; 2.8s: 2.3e+03--2.4e+03
+Adj. AE/turn: 0.0810782 stdev. 0.00176496, index 1.81263e-05
+
+Line for paper: 
+AA2375SF7in2016 & & 2341 & 2305--2377 & 2305--2377 & & 9481\\  % IPRauto: 2436 +- 17.87  / 2341
+Bootstrap IPR: 2340.9, stdev 0
+Bootstrap s: 0.017564, stdev 0
+Bootstrap c: 0.60061, stdev 0
+
+----------
+Test using PowerShares trial BasicPS: 10819 turns, 9481 filtered by 2 filters; delta cap 10.00
+Spec AA2375SF7in2016: InvExp, Unit weights with
+s = 0.0175644, c = 0.600612, d = 16.5, v = 0.05, a = 1.00062, hm = 1.45056, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+
+----------
+
+From 9481 turns with total weight 9481, move indices first:
+
+i  mDelta SwFixed SwUsed  SwRel    ProjVal  Sigma      Actual   Proj% Actual%  2sigma range   z-score
+ 1  0.00  0.0659  0.0522  0.0000   4773.00  33.78:    4773.00  50.34%: 50.34% 49.63%--51.06%, z =  +0.00
+ 2  0.20  0.0426  0.0309 -0.0215   1735.00  28.37:    1735.00  18.37%: 18.37% 17.76%--18.97%, z =  -0.00
+ 3  0.32  0.0314  0.0212 -0.0315    880.65  22.86:     838.00   9.38%:  8.92%  8.89%-- 9.86%, z =  -1.87
+ 4  0.40  0.0247  0.0152 -0.0378    520.06  18.51:     530.00   5.59%:  5.70%  5.20%-- 5.99%, z =  +0.54
+ 5  0.46  0.0185  0.0098 -0.0436    369.05  15.99:     379.00   4.01%:  4.12%  3.67%-- 4.36%, z =  +0.62
+ 6  0.51  0.0165  0.0084 -0.0452    258.57  13.58:     254.00   2.83%:  2.78%  2.53%-- 3.13%, z =  -0.34
+ 7  0.55  0.0125  0.0048 -0.0491    180.86  11.65:     173.00   2.00%:  1.91%  1.74%-- 2.25%, z =  -0.67
+ 8  0.60  0.0079  0.0007 -0.0533    147.56  10.50:     168.00   1.63%:  1.86%  1.40%-- 1.87%, z =  +1.95
+ 9  0.64  0.0046 -0.0021 -0.0562    119.93   9.52:     117.00   1.33%:  1.30%  1.12%-- 1.54%, z =  -0.31
+10  0.68  0.0038 -0.0027 -0.0568     99.51   8.75:     108.00   1.11%:  1.20%  0.91%-- 1.30%, z =  +0.97
+11  0.72  0.0019 -0.0040 -0.0582     76.31   7.73:      70.00   0.85%:  0.78%  0.68%-- 1.02%, z =  -0.82
+12  0.75 -0.0006 -0.0060 -0.0602     73.75   7.45:      57.00   0.82%:  0.64%  0.66%-- 0.99%, z =  -2.25
+13  0.79 -0.0030 -0.0084 -0.0627     51.99   6.43:      54.00   0.58%:  0.61%  0.44%-- 0.73%, z =  +0.31
+14  0.83 -0.0043 -0.0093 -0.0638     41.73   5.76:      45.00   0.47%:  0.51%  0.34%-- 0.60%, z =  +0.57
+15  0.86 -0.0050 -0.0098 -0.0645     33.63   5.06:      46.00   0.38%:  0.53%  0.27%-- 0.50%, z =  +2.45
+Index fits, x10,000: 0.007909, wtd. 0.007909, diff -9.364e-05; mass 0.08203, wtd. 0.08203; diff -9.364e-05
+
+Name              ProjVal  St.Dev    Actual;   Proj% Actual%  2sigma range   z-score
+ScaledFalloffW     704.07  12.11:     704.07  0.0743: 0.0743 0.0717--0.0768, z = -0.0000, adj -0.0000
+MoveMatchWtd      4773.00  33.78:    4773.00  50.34%: 50.34% 49.63%--51.06%, z =  +0.00, adj  +0.00
+EqualValueMatch   5250.00  33.52:    5250.00  55.37%: 55.37% 54.67%--56.08%, z =  -0.00, adj  -0.00
+PlayedMoveMatch   4299.29  32.36:    9481.00  45.35%: 100.00% 44.66%--46.03%, z = +160.14
+
+Selection Test    ProjVal  St.Dev    Actual;  Proj%  Actual%  2sigma range  z-score
+Delta01-10         755.92  15.60:     790.00  7.97%:  8.33%  7.64%-- 8.30%, z =  +2.18, engm% = 0.01
+Delta11-30         706.57  17.71:     718.00  7.45%:  7.57%  7.08%-- 7.83%, z =  +0.65, engm% = 0.00
+Delta31-70         428.28  15.27:     394.00  4.52%:  4.16%  4.20%-- 4.84%, z =  -2.24, engm% = 0.00
+Delta71-150        154.42   9.76:     177.00  1.63%:  1.87%  1.42%-- 1.83%, z =  +2.31, engm% = 0.00
+Error050           395.12  14.30:     392.00  4.17%:  4.13%  3.87%-- 4.47%, z =  -0.22, engm% = 0.00
+Error100           168.56   9.27:     165.00  1.78%:  1.74%  1.58%-- 1.97%, z =  -0.38, engm% = 0.00
+Error200            77.06   6.01:      59.00  0.81%:  0.62%  0.69%-- 0.94%, z =  -3.01, engm% = 0.00
+Error400            44.88   4.34:      33.00  0.47%:  0.35%  0.38%-- 0.56%, z =  -2.74, engm% = 0.00
+EvalGoesToZero     924.63  14.16:     926.00  9.75%:  9.77%  9.45%--10.05%, z =  +0.10, engm% = 9.60
+PawnMove          2226.52  25.29:    2085.00 23.48%: 21.99% 22.95%--24.02%, z =  -5.60, engm% = 24.41
+KnightMove        1482.49  19.97:    1611.00 15.64%: 16.99% 15.22%--16.06%, z =  +6.44, engm% = 16.12
+BishopMove        1495.79  20.63:    1475.00 15.78%: 15.56% 15.34%--16.21%, z =  -1.01, engm% = 14.94
+RookMove          2052.41  23.41:    2045.00 21.65%: 21.57% 21.15%--22.14%, z =  -0.32, engm% = 21.55
+QueenMove         1133.91  17.23:    1104.00 11.96%: 11.64% 11.60%--12.32%, z =  -1.74, engm% = 11.63
+KingMove          1089.90  18.10:    1161.00 11.50%: 12.25% 11.11%--11.88%, z =  +3.93, engm% = 11.36
+Castling           140.45   7.30:     151.00  1.48%:  1.59%  1.33%-- 1.64%, z =  +1.45, engm% = 1.32
+Capture           2083.69  16.31:    2143.00 21.98%: 22.60% 21.63%--22.32%, z =  +3.64, engm% = 22.11
+NonCapture        7397.33  16.31:    7338.00 78.02%: 77.40% 77.68%--78.37%, z =  -3.64, engm% = 77.89
+Promotion            8.77   0.62:      10.00  0.09%:  0.11%  0.08%-- 0.11%, z =  +1.99, engm% = 0.09
+AdvancingMove     5993.27  28.61:    5996.00 63.21%: 63.24% 62.61%--63.82%, z =  +0.10, engm% = 63.74
+RetreatingMove    1627.57  22.76:    1603.00 17.17%: 16.91% 16.69%--17.65%, z =  -1.08, engm% = 16.80
+SidewaysMove      1860.18  24.89:    1882.00 19.62%: 19.85% 19.10%--20.15%, z =  +0.88, engm% = 19.46
+CheckingMove       423.36  10.76:     459.00  4.47%:  4.84%  4.24%-- 4.69%, z =  +3.31, engm% = 4.46
+EngineMove        4773.00  33.78:    4773.00 50.34%: 50.34% 49.63%--51.06%, z =  +0.00, engm% = 100.00
+PlayedMove        4299.29  32.36:    9481.00 45.35%: 100.00% 44.66%--46.03%, z = +160.14, engm% = 50.34
+SamePieceAsPrev    249.20   6.48:     260.00  2.63%:  2.74%  2.49%-- 2.77%, z =  +1.67, engm% = 2.58
+EqualTopMove      5250.00  33.52:    5251.00 55.37%: 55.38% 54.67%--56.08%, z =  +0.03, engm% = 100.00
+
+----------
+
+PowerShares trial BasicPS: 0 turns, 0 filtered by 3 filters; delta cap 10.00
+Spec AA2375SF7in2016: InvExp, Unit weights with
+s = 0.0175644, c = 0.600612, d = 16.5, v = 0.05, a = 1.00062, hm = 1.45056, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Grischuk2m: PlayerFilter Grischuk, to move
+
+
+------------------------------------------------------------------------
+GSL Nelder-Mead (newer version) with active tests and weights:
+Fit of scaled error: 1
+Fit of engine first line: 1
+Fit of equal-top-value moves: 1
+Index diff of [1,4], sqrtsked: 0.25
+bounds s in [0.0001..1.024], c in [0..10],  d in [16.5..16.5], v in [0.05..0.05], a in [0..10], hm in [0..10], hp in [1..1], b in [1..1], of
+PowerShares trial BasicPS: 9027 turns, 447 filtered by 3 filters; delta cap 10.00
+Spec AA2375SF7in2016: InvExp, Unit weights with
+s = 0.0175644, c = 0.600612, d = 16.5, v = 0.05, a = 1.00062, hm = 1.45056, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Grischuk2m: PlayerFilter Grischuk, to move
+------------------------------------------------------------------------
+
+Total number of minimand calls: 1698
+Best-fit score (x10,000) and spec: 0.71264
+Grischuk3: InvExp, Unit weights with s = 0.0224008, c = 0.422261, d = 16.5, v = 0.05, a = 0.200678, hm = 8.01338, hp = 1, b = 1
+----------
+IPR: 2586 from 0.06358, 2-sigma range [2395,2777], 2.8-sigma [2211,2960]
+IPR if 447 positions faced were test suite: 2576, st. dev. 96
+AdjIPR: 2.7e+03 via 0.0569037/0.0642607 = 0.885514: 2.5e+03--2.9e+03; 2.8s: 2.5e+03--2.9e+03
+Adj. AE/turn: 0.056305 stdev. 0.00547814, index 0.000259107
+
+Line for paper: 
+Grischuk3 & & 2586 & 2395--2777 & 2395--2777 & & 447\\  % IPRauto: 2576 +- 95.52  / 2687
+Bootstrap IPR: 2585.6, stdev 0
+Bootstrap s: 0.022401, stdev 0
+Bootstrap c: 0.42226, stdev 0
+
+------------------------------------------------------------------------
+GSL Nelder-Mead (newer version) with active tests and weights:
+Fit of scaled error: 1
+Fit of engine first line: 1
+Fit of equal-top-value moves: 1
+Index diff of [1,4], unknown sked: 0.25
+bounds s in [0.0001..1.024], c in [0..10],  d in [16.5..16.5], v in [0..1], a in [1..1], hm in [0..10], hp in [1..1], b in [1..1], of
+PowerShares trial BasicPS: 9027 turns, 447 filtered by 3 filters; delta cap 10.00
+Spec Grischuk3: InvExp, Unit weights with
+s = 0.0224008, c = 0.422261, d = 16.5, v = 0.05, a = 0.200678, hm = 8.01338, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Grischuk2m: PlayerFilter Grischuk, to move
+------------------------------------------------------------------------
+
+Total number of minimand calls: 403
+Best-fit score (x10,000) and spec: 606.83
+G4: InvExp, Unit weights with s = 0.0345257, c = 0.30104, d = 16.5, v = 0.117453, a = 1, hm = 7.88271, hp = 1, b = 1
+----------
+IPR: -2829 from 0.4507, 2-sigma range [-3322,-2335], 2.8-sigma [-3796,-1861]
+IPR if 447 positions faced were test suite: -2259, st. dev. 2.5e+02
+AdjIPR: 2.6e+03 via 0.0569037/0.409964 = 0.138802: 2.1e+03--3.1e+03; 2.8s: 2.1e+03--3.1e+03
+Adj. AE/turn: 0.0625585 stdev. 0.00547814, index 0.000259107
+
+Line for paper: 
+G4 & & -2829 & -3322---2335 & -3322---2335 & & 447\\  % IPRauto: -2259 +- 246.8  / 2600
+Bootstrap IPR: -2828.6, stdev 0
+Bootstrap s: 0.034526, stdev 0
+Bootstrap c: 0.30104, stdev 0
+
+------------------------------------------------------------------------
+GSL Nelder-Mead (newer version) with active tests and weights:
+Fit of scaled error: 1
+Fit of engine first line: 1
+Fit of equal-top-value moves: 1
+Index diff of [1,4], unknown sked: 0.25
+bounds s in [0.0001..1.024], c in [0..10],  d in [16.5..16.5], v in [0..1], a in [1..1], hm in [0..10], hp in [1..1], b in [1..1], of
+PowerShares trial BasicPS: 9027 turns, 447 filtered by 3 filters; delta cap 10.00
+Spec G4: InvExp, Unit weights with
+s = 0.0345257, c = 0.30104, d = 16.5, v = 0.117453, a = 1, hm = 1, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Grischuk2m: PlayerFilter Grischuk, to move
+------------------------------------------------------------------------
+
+Total number of minimand calls: 641
+Best-fit score (x10,000) and spec: 0.91238
+G5: InvExp, Unit weights with s = 0.0187222, c = 0.443291, d = 16.5, v = 0.122122, a = 1, hm = 0.724819, hp = 1, b = 1
+----------
+IPR: 2590 from 0.06326, 2-sigma range [2399,2782], 2.8-sigma [2215,2966]
+IPR if 447 positions faced were test suite: 2568, st. dev. 96
+AdjIPR: 2.7e+03 via 0.0569037/0.0648323 = 0.877707: 2.5e+03--2.9e+03; 2.8s: 2.5e+03--2.9e+03
+Adj. AE/turn: 0.0555213 stdev. 0.00547814, index 0.000259107
+
+Line for paper: 
+G5 & & 2590 & 2399--2782 & 2399--2782 & & 447\\  % IPRauto: 2568 +- 95.79  / 2698
+Bootstrap IPR: 2590.2, stdev 0
+Bootstrap s: 0.018722, stdev 0
+Bootstrap c: 0.44329, stdev 0
+
+----------
+Test using PowerShares trial BasicPS: 9027 turns, 447 filtered by 3 filters; delta cap 10.00
+Spec G5: InvExp, Unit weights with
+s = 0.0187222, c = 0.443291, d = 16.5, v = 0.122122, a = 1, hm = 0.724819, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Grischuk2m: PlayerFilter Grischuk, to move
+
+----------
+
+From 447 turns with total weight 447, move indices first:
+
+i  mDelta SwFixed SwUsed  SwRel    ProjVal  Sigma      Actual   Proj% Actual%  2sigma range   z-score
+ 1  0.00  0.0841  0.0333  0.0000    262.52   8.80:     256.00  58.73%: 57.27% 54.79%--62.67%, z =  -0.74
+ 2  0.23  0.0683  0.0259 -0.0074     74.70   6.67:      72.00  16.75%: 16.14% 13.76%--19.74%, z =  -0.41
+ 3  0.35  0.0555  0.0109 -0.0228     35.14   5.17:      40.00   7.95%:  9.05%  5.61%--10.29%, z =  +0.94
+ 4  0.42  0.0419  0.0103 -0.0234     21.13   4.15:      20.00   4.79%:  4.54%  2.91%-- 6.68%, z =  -0.27
+ 5  0.49  0.0347  0.0061 -0.0277     12.88   3.33:      11.00   2.93%:  2.50%  1.41%-- 4.44%, z =  -0.56
+ 6  0.56  0.0365  0.0038 -0.0301      9.79   2.92:      10.00   2.24%:  2.28%  0.90%-- 3.57%, z =  +0.07
+ 7  0.62  0.0252  0.0006 -0.0335      6.31   2.39:      10.00   1.45%:  2.29%  0.35%-- 2.54%, z =  +1.55
+ 8  0.67  0.0189 -0.0034 -0.0374      5.42   2.20:      11.00   1.24%:  2.52%  0.23%-- 2.25%, z =  +2.53
+ 9  0.72  0.0162 -0.0065 -0.0405      3.87   1.87:       3.00   0.89%:  0.69%  0.03%-- 1.74%, z =  -0.47
+10  0.76  0.0101 -0.0082 -0.0423      2.82   1.60:       4.00   0.65%:  0.92% -0.09%-- 1.38%, z =  +0.74
+11  0.80  0.0159 -0.0055 -0.0396      2.40   1.49:       2.00   0.55%:  0.46% -0.13%-- 1.23%, z =  -0.27
+12  0.83  0.0029 -0.0134 -0.0477      2.08   1.38:       0.00   0.48%:  0.00% -0.16%-- 1.11%, z =  -1.51
+13  0.88  0.0087 -0.0086 -0.0432      1.40   1.15:       3.00   0.33%:  0.70% -0.21%-- 0.86%, z =  +1.40
+14  0.91  0.0028 -0.0125 -0.0475      1.77   1.27:       2.00   0.42%:  0.47% -0.19%-- 1.02%, z =  +0.18
+15  0.93  0.0102 -0.0090 -0.0439      0.92   0.92:       0.00   0.22%:  0.00% -0.22%-- 0.67%, z =  -1.00
+Index fits, x10,000: 0.1486, wtd. 0.1486, diff 0.004837; mass 2.599, wtd. 2.599; diff 0.004837
+
+Name              ProjVal  St.Dev    Actual;   Proj% Actual%  2sigma range   z-score
+ScaledFalloffW      28.98   3.06:      25.44  0.0648: 0.0569 0.0511--0.0785, z = +1.1576, adj +0.8269
+MoveMatchWtd       262.52   8.80:     256.00  58.73%: 57.27% 54.79%--62.67%, z =  -0.74, adj  -0.64
+EqualValueMatch    282.98   8.65:     274.00  63.31%: 61.30% 59.43%--67.18%, z =  -1.04, adj  -0.86
+PlayedMoveMatch    220.10   7.92:     447.00  49.24%: 100.00% 45.70%--52.78%, z = +28.65
+
+Selection Test    ProjVal  St.Dev    Actual;  Proj%  Actual%  2sigma range  z-score
+Delta01-10          23.50   3.41:      29.00  5.26%:  6.49%  3.73%-- 6.78%, z =  +1.61, engm% = 0.00
+Delta11-30          29.20   4.14:      29.00  6.53%:  6.49%  4.68%-- 8.39%, z =  -0.05, engm% = 0.00
+Delta31-70          15.01   3.25:      14.00  3.36%:  3.13%  1.90%-- 4.81%, z =  -0.31, engm% = 0.00
+Delta71-150          5.86   2.15:       3.00  1.31%:  0.67%  0.35%-- 2.27%, z =  -1.33, engm% = 0.00
+Error050            14.17   3.24:       7.00  3.17%:  1.57%  1.72%-- 4.62%, z =  -2.21, engm% = 0.00
+Error100             4.68   1.90:       2.00  1.05%:  0.45%  0.20%-- 1.90%, z =  -1.41, engm% = 0.00
+Error200             1.80   1.20:       1.00  0.40%:  0.22% -0.13%-- 0.94%, z =  -0.67, engm% = 0.00
+Error400             0.36   0.58:       0.00  0.08%:  0.00% -0.18%-- 0.34%, z =  -0.63, engm% = 0.00
+EvalGoesToZero      46.95   3.69:      50.00 10.50%: 11.19%  8.85%--12.15%, z =  +0.83, engm% = 11.41
+PawnMove            95.92   5.71:      97.00 21.46%: 21.70% 18.91%--24.01%, z =  +0.19, engm% = 20.36
+KnightMove          71.12   4.85:      75.00 15.91%: 16.78% 13.74%--18.08%, z =  +0.80, engm% = 14.99
+BishopMove          59.67   4.29:      63.00 13.35%: 14.09% 11.43%--15.27%, z =  +0.78, engm% = 14.09
+RookMove           104.68   5.47:      95.00 23.42%: 21.25% 20.97%--25.86%, z =  -1.77, engm% = 23.49
+QueenMove           62.76   4.30:      65.00 14.04%: 14.54% 12.12%--15.96%, z =  +0.52, engm% = 13.65
+KingMove            52.85   4.25:      52.00 11.82%: 11.63%  9.92%--13.72%, z =  -0.20, engm% = 13.42
+Castling             7.90   1.80:       8.00  1.77%:  1.79%  0.96%-- 2.57%, z =  +0.05, engm% = 2.24
+Capture             96.64   3.97:     105.00 21.62%: 23.49% 19.84%--23.39%, z =  +2.11, engm% = 23.27
+NonCapture         350.36   3.97:     342.00 78.38%: 76.51% 76.61%--80.16%, z =  -2.11, engm% = 76.73
+Promotion            0.21   0.41:       1.00  0.05%:  0.22% -0.14%-- 0.23%, z =  +1.92, engm% = 0.00
+AdvancingMove      264.25   6.66:     282.00 59.12%: 63.09% 56.13%--62.10%, z =  +2.66, engm% = 59.28
+RetreatingMove      77.46   5.42:      66.00 17.33%: 14.77% 14.90%--19.76%, z =  -2.11, engm% = 16.33
+SidewaysMove       105.30   5.94:      99.00 23.56%: 22.15% 20.90%--26.21%, z =  -1.06, engm% = 24.38
+CheckingMove        19.76   2.69:      21.00  4.42%:  4.70%  3.22%-- 5.63%, z =  +0.46, engm% = 4.92
+EngineMove         262.52   8.80:     256.00 58.73%: 57.27% 54.79%--62.67%, z =  -0.74, engm% = 100.00
+PlayedMove         220.10   7.92:     447.00 49.24%: 100.00% 45.70%--52.78%, z = +28.65, engm% = 57.27
+SamePieceAsPrev     14.41   1.63:      14.00  3.22%:  3.13%  2.50%-- 3.95%, z =  -0.25, engm% = 3.36
+EqualTopMove       282.98   8.65:     273.00 63.31%: 61.07% 59.43%--67.18%, z =  -1.15, engm% = 100.00
+
+----------
+
+
+------------------------------------------------------------------------
+GSL Nelder-Mead (newer version) with active tests and weights:
+Fit of scaled error: 1
+Fit of engine first line: 1
+Fit of equal-top-value moves: 1
+Index diff of [1,4], unitsked: 0.25
+bounds s in [0.0001..1.024], c in [0..10],  d in [16.5..16.5], v in [0..1], a in [1..1], hm in [0..10], hp in [1..1], b in [1..1], of
+PowerShares trial BasicPS: 9027 turns, 447 filtered by 3 filters; delta cap 10.00
+Spec G5: InvExp, Unit weights with
+s = 0.0187222, c = 0.443291, d = 16.5, v = 0.122122, a = 1, hm = 0.724819, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Grischuk2m: PlayerFilter Grischuk, to move
+------------------------------------------------------------------------
+
+Total number of minimand calls: 288
+Best-fit score (x10,000) and spec: 0.90627
+G6: InvExp, Unit weights with s = 0.018868, c = 0.44388, d = 16.5, v = 0.124781, a = 1, hm = 0.724986, hp = 1, b = 1
+----------
+IPR: 2592 from 0.06312, 2-sigma range [2401,2783], 2.8-sigma [2217,2967]
+IPR if 447 positions faced were test suite: 2570, st. dev. 96
+AdjIPR: 2.7e+03 via 0.0569037/0.0647149 = 0.879299: 2.5e+03--2.9e+03; 2.8s: 2.5e+03--2.9e+03
+Adj. AE/turn: 0.0555021 stdev. 0.00547814, index 0.000259107
+
+Line for paper: 
+G6 & & 2592 & 2401--2783 & 2401--2783 & & 447\\  % IPRauto: 2570 +- 95.65  / 2699
+Bootstrap IPR: 2592.1, stdev 0
+Bootstrap s: 0.018868, stdev 0
+Bootstrap c: 0.44388, stdev 0
+
+------------------------------------------------------------------------
+GSL Simulated Annealing with active tests and weights:
+Fit of scaled error: 1
+Fit of engine first line: 1
+Fit of equal-top-value moves: 1
+Index diff of [1,4], unknown sked: 0.25
+bounds s in [0.0001..1.024], c in [0..10],  d in [16.5..16.5], v in [0..1], a in [1..1], hm in [0..10], hp in [1..1], b in [1..1], of
+PowerShares trial BasicPS: 9027 turns, 447 filtered by 3 filters; delta cap 10.00
+Spec G6: InvExp, Unit weights with
+s = 0.018868, c = 0.44388, d = 16.5, v = 0.124781, a = 1, hm = 0.724986, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Grischuk2m: PlayerFilter Grischuk, to move
+------------------------------------------------------------------------
+
+Doing 1000 evals by SA from temp 1 damped by 1.1574
+giving 63 cooling stages with 16 probes each.
+
+Total number of minimand calls: 1026
+Best-fit score (x10,000) and spec: 0.90586
+G7: InvExp, Unit weights with s = 0.0194356, c = 0.444009, d = 16.5, v = 0.119669, a = 1, hm = 0.712138, hp = 1, b = 1
+----------
+IPR: 2584 from 0.06371, 2-sigma range [2391,2777], 2.8-sigma [2206,2962]
+IPR if 447 positions faced were test suite: 2562, st. dev. 96
+AdjIPR: 2.7e+03 via 0.0569037/0.0652798 = 0.87169: 2.5e+03--2.9e+03; 2.8s: 2.5e+03--2.9e+03
+Adj. AE/turn: 0.0555325 stdev. 0.00547814, index 0.000259107
+
+Line for paper: 
+G7 & & 2584 & 2391--2777 & 2391--2777 & & 447\\  % IPRauto: 2562 +- 96.36  / 2698
+Bootstrap IPR: 2583.9, stdev 0
+Bootstrap s: 0.019436, stdev 0
+Bootstrap c: 0.44401, stdev 0
+
+------------------------------------------------------------------------
+GSL Nelder-Mead (newer version) with active tests and weights:
+Fit of scaled error: 1
+Fit of engine first line: 1
+Fit of equal-top-value moves: 1
+Index diff of [1,4], unknown sked: 0.25
+bounds s in [0.0001..1.024], c in [0..10],  d in [16.5..16.5], v in [0..1], a in [1..1], hm in [0..10], hp in [1..1], b in [1..1], of
+PowerShares trial BasicPS: 9027 turns, 447 filtered by 3 filters; delta cap 10.00
+Spec G7: InvExp, Unit weights with
+s = 0.0194356, c = 0.444009, d = 16.5, v = 0.119669, a = 1, hm = 0.712138, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Grischuk2m: PlayerFilter Grischuk, to move
+------------------------------------------------------------------------
+
+Total number of minimand calls: 1228
+Best-fit score (x10,000) and spec: 0.78734
+G9: InvExp, Unit weights with s = 0.0314888, c = 0.46358, d = 16.5, v = 0.12213, a = 1, hm = 0.519626, hp = 1, b = 1
+----------
+IPR: 2595 from 0.06291, 2-sigma range [2402,2788], 2.8-sigma [2217,2973]
+IPR if 447 positions faced were test suite: 2575, st. dev. 96
+AdjIPR: 2.7e+03 via 0.0569037/0.0643089 = 0.884849: 2.5e+03--2.9e+03; 2.8s: 2.5e+03--2.9e+03
+Adj. AE/turn: 0.0556658 stdev. 0.00547814, index 0.000259107
+
+Line for paper: 
+G9 & & 2595 & 2402--2788 & 2402--2788 & & 447\\  % IPRauto: 2575 +- 96.49  / 2696
+Bootstrap IPR: 2595, stdev 0
+Bootstrap s: 0.031489, stdev 0
+Bootstrap c: 0.46358, stdev 0
+
+------------------------------------------------------------------------
+MPFIT Levenberg-Marquardt (no derivatives) with active tests and weights:
+Fit of scaled error: 1
+Fit of engine first line: 1
+Fit of equal-top-value moves: 1
+Index diff of [1,4], unknown sked: 0.25
+bounds s in [0.0001..1.024], c in [0..10],  d in [16.5..16.5], v in [0..1], a in [1..1], hm in [0..10], hp in [1..1], b in [1..1], of
+PowerShares trial BasicPS: 9027 turns, 447 filtered by 3 filters; delta cap 10.00
+Spec G9: InvExp, Unit weights with
+s = 0.0314888, c = 0.46358, d = 16.5, v = 0.12213, a = 1, hm = 0.519626, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Grischuk2m: PlayerFilter Grischuk, to move
+------------------------------------------------------------------------
+
+Total number of minimand calls: 8
+Best-fit score (x10,000) and spec: 0.78734
+MP: InvExp, Unit weights with s = 0.0314888, c = 0.46358, d = 16.5, v = 0.12213, a = 1, hm = 0.519626, hp = 1, b = 1
+----------
+IPR: 2595 from 0.06291, 2-sigma range [2402,2788], 2.8-sigma [2217,2973]
+IPR if 447 positions faced were test suite: 2575, st. dev. 96
+AdjIPR: 2.7e+03 via 0.0569037/0.0643089 = 0.884849: 2.5e+03--2.9e+03; 2.8s: 2.5e+03--2.9e+03
+Adj. AE/turn: 0.0556658 stdev. 0.00547814, index 0.000259107
+
+Line for paper: 
+MP & & 2595 & 2402--2788 & 2402--2788 & & 447\\  % IPRauto: 2575 +- 96.49  / 2696
+Bootstrap IPR: 2595, stdev 0
+Bootstrap s: 0.031489, stdev 0
+Bootstrap c: 0.46358, stdev 0
+
+------------------------------------------------------------------------
+MPFIT Levenberg-Marquardt (no derivatives) with active tests and weights:
+Fit of scaled error: 1
+Fit of engine first line: 1
+Fit of equal-top-value moves: 1
+Index diff of [1,4], unknown sked: 0.25
+bounds s in [0.0001..1.024], c in [0..10],  d in [16.5..16.5], v in [0..1], a in [1..1], hm in [0..10], hp in [1..1], b in [1..1], of
+PowerShares trial BasicPS: 9027 turns, 447 filtered by 3 filters; delta cap 10.00
+Spec MP: InvExp, Unit weights with
+s = 0.1, c = 0.46358, d = 16.5, v = 0.12213, a = 1, hm = 0.519626, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+Grischuk2m: PlayerFilter Grischuk, to move
+------------------------------------------------------------------------
+
+Total number of minimand calls: 5
+Best-fit score (x10,000) and spec: 22409
+MP2: InvExp, Unit weights with s = 0.1, c = 0.47824, d = 16.5, v = 0.12213, a = 1, hm = 0.519626, hp = 1, b = 1
+----------
+IPR: 1717 from 0.1257, 2-sigma range [1404,2029], 2.8-sigma [1104,2329]
+IPR if 447 positions faced were test suite: 1671, st. dev. 1.6e+02
+AdjIPR: 2.7e+03 via 0.0569037/0.128995 = 0.441132: 2.4e+03--3e+03; 2.8s: 2.4e+03--3e+03
+Adj. AE/turn: 0.0554556 stdev. 0.00547814, index 0.000259107
+
+Line for paper: 
+MP2 & & 1717 & 1404--2029 & 1404--2029 & & 447\\  % IPRauto: 1671 +- 156.2  / 2699
+Bootstrap IPR: 1716.7, stdev 0
+Bootstrap s: 0.1, stdev 0
+Bootstrap c: 0.47824, stdev 0

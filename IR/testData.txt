@@ -1,0 +1,26 @@
+
+//IR  Session run on Fri Mar 17 11:48:43 2017 (1489765723)
+
+
+//IR  Session run on Fri Mar 17 11:51:07 2017 (1489765867)
+
+
+------------------------------------------------------------------------
+GSL Nelder-Mead (newer version) with active tests and weights:
+Fit of scaled error: 1
+Fit of engine first line: 1
+Fit of equal-top-value moves: 1
+Fit of engine second line: 1
+Index fit of [2,4], unitsked: 0.05
+bounds s in [0.0001..1.024], c in [0..10],  d in [16.5..16.5], v in [0.05..0.05], a in [0..10], hm in [0..10], hp in [1..1], b in [1..1], of
+PowerShares trial BasicPS: 4110 turns, 3715 filtered by 2 filters; delta cap 10.00
+Spec SLMstart: InvExp, Unit weights with
+s = 0.02, c = 0.53, d = 16.5, v = 0.05, a = 1, hm = 1.61, hp = 1, b = 1;
+SimpleFullFractalScale, noPatch, WEF, (separate,relative2,damped) [30 .. 30,5 .. 19; 0](0.00,1.0,1.600,1.200,1.000,1.000):
+Log(1 + ...) scaling damped by 1.6;1.2, with normFactors (*omodo*,1.01) (*tockfish*,1)  and equal-top add 0.000
+Filters:
+RC0: RepCount == 0
+pnew4norm: OrFilter [Prev turn |eval| <= 4, Turn |eval| <= 4, Next turn |eval| <= 4] 
+------------------------------------------------------------------------
+
+Total number of minimand calls: 368
